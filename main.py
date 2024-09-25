@@ -111,7 +111,7 @@ def getWeather(city):
 
 def takeScreenshot():
     screenshot = pyautogui.screenshot()
-    screenshot.save("C:\\Users\\Mohit\\Documents\\screenshot.png")  # Save in Documents
+    screenshot.save("C:\\Users\\Ananya\\Documents\\screenshot.png")  # Save in Documents
     speak("Screenshot has been taken and saved in your Documents folder.")
 
 def takePhoto():
@@ -208,7 +208,7 @@ if __name__ == "__main__":
 
         elif "open code" in query:
             speak("Opening Visual Studio Code")
-            codePath = "C:\\Users\\Mohit\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codePath = "C:\\Users\\Ananya\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
 
         elif "open notepad" in query:
