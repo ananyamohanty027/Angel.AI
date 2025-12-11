@@ -65,6 +65,7 @@ def TakeCommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
+        r.adjust_for_ambient_noise(source, duration=1)
         r.pause_threshold = 1
         audio = r.listen(source)
     
@@ -238,3 +239,4 @@ if __name__ == "__main__":
             break 
         else:
             speak("I'm sorry, I didn't understand that. Could you repeat?")
+
